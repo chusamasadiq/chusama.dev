@@ -1,4 +1,6 @@
-@import  url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+/* HTML Common Properties*/
 body {
   margin: 0;
   padding: 0;
@@ -6,62 +8,92 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  font-family: "Inter";
-  overflow-x: hidden;
-  overflow-y: scroll;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Navbar Section */
 .navbar {
   height: 5rem;
-  font-size: 1rem;
-  padding-left: 50px;
   background-color: #fff;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Banner Section */
 .banner {
-  margin-top: 60px;
-  background-color: #0b3685;
+  background-color: maroon;
   height: 550px;
 }
 
 .btn {
   width: 10rem;
 }
-.services {
-  background-color: #0b3685;
-  height: 880px;
+
+/* Justify Text Alignment  */
+.text-justify {
+  text-align: justify;
 }
 
-.card-img-top{
+/* Services Section */
+.services {
+  background-color: maroon;
+  height: 900px;
+}
+ .card-img-top {
   height: 200px;
-  padding: 10px;
 }
 
 .card {
-  height: 270px;
- 
-}
+  height: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+} 
 
-.footer{
-  background-color: #0b3685;
+/* Footer Section */
+.footer {
+  background-color: rgba(92, 92, 92, 0.382);
   color: #fff;
-  
 }
 
-a{
+a {
   color: rgb(163, 162, 162);
   text-decoration: none;
 }
 
-a:hover{
-  color:#fff;
+a:hover {
+  color: #fff;
   text-decoration: none;
 }
-.footer-bottom{
+
+.footer {
+  background-color: #252525;
+}
+
+.footer-bottom {
+  height: 80px;
   padding: 20px;
   background-color: #000;
   text-align: center;
   color: #fff;
+}
+
+/* Responsive Section */
+@media (max-width: 992px) {
+  .banner {
+    height: 900px;
+  }
+  .services {
+    background-color: maroon;
+    height: 2300px;
+  }
+  @media only screen and (max-width: 600px) {
+    .footer .last-res-end{
+    margin-left: -6rem!important;
+    }
+  }  
 }
