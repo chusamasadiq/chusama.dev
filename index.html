@@ -1,588 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khat-Tech Enterprises</title>
 
-    <!-- Favicons -->
-    <link
-      href="./assets/images/khat-Tech.jpg"
-      rel="icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usama Sadiq</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+  <!-- Favicons -->
+  <link href="./assets/images/khat-Tech.jpg" rel="icon" />
 
-    <!-- AOS Animations CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
 
-  <body>
-    <!-- Start Header -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
+  <!-- AOS Animations CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img
-            src="./assets/images/Khat-Tech-Logo.png"
-            height="40px"
-            width="200px"
-          />
+          <img src="./assets/images/Usama.svg" id="logo" alt="" srcset="">
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <a class="nav-link active me-3" aria-current="page" href="navbar"
-              >Home</a
-            >
-            <a class="nav-link me-3" href="#AboutUs">About Us</a>
+            <a class="nav-link active me-3" aria-current="page" href="navbar">Home</a>
             <a class="nav-link me-3" href="#services">Services</a>
-            <a class="nav-link me-3" href="#">Careers</a>
-            <a class="nav-link me-3" href="#">Contact Us</a>
+            <a class="nav-link me-3" href="#portfolio">Portfolio</a>
+            <a class="nav-link me-3" href="contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- End Header -->
 
-    <!-- Start Banner -->
-    <!-- start banner section -->
-    <section class="banner">
-      <div class="container-fluid">
-        <div class="row">
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 text-light pt-5 mt-5 text-center"
-          >
-            <p class="pt-4"></p>
-            <h1>
-              Delivering<br /><strong> TECHNOLOGY</strong><br />
-              With Passion
-            </h1>
-            <button class="btn btn-danger m-2 p-2 rounded-pill">
-              Whatsapp
-            </button>
-            <button class="btn btn-secondary p-2 rounded-pill m-2">
-              Our Services
-            </button>
-          </div>
-
-          <div
-            class="col-lg-6 pt-5 text-center"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <img
-              src="./assets/images/main.png"
-              alt=""
-              height="500px"
-              width="500px"
-              class="img-fluid"
-            />
-          </div>
-        </div>
+    <!-- Navbar for Mobile View -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+        <a class="navbar-brand offcanvas-title" href="#">
+          <img src="./assets/images/Usama.svg" id="logo" alt="" srcset="">
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </section>
-    <!-- End Banner -->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+        </ul>
 
-    <!-- start About Us section -->
-    <section id="AboutUs">
-      <div class="container">
-        <div class="text-center pt-5">
-          <h1 class="fw-bold">About Us</h1>
-          <p>
-            We at Khat-Tech Enterprises are highly specialised for all your
-            corporate needs.<br />Starting from Customer Services Support to
-            Building Highly Customised Applications.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 text-dark pt-5 text-center">
-            <p class="text-justify">
-              Khat-Tech Enterprises was originally founded by the Chairman and
-              Founder of Premier Group. He envisions building state-of-the-art
-              organizations that set the benchmark for exceptional quality and
-              standards. Khat-Tech Enterprises was also found on these bases where
-              we aspire to provide our stakeholders with digital and IT
-              solutions that are innovative and exemplary among the competition.
-              Being the ninth initiative of the Premier Group, Khat-Tech Enterprises
-              never settles for less. We provide our stakeholders,
-              whether they be our international clients, students, or local
-              business partners with the best practices of the digital world
-              which proves to be the premier of all.
-            </p>
-
-            <p class="text-dark text-justify pt-5">
-              Your Premier Gateway to the Digital World! The future of your
-              organization will be brightly digitalized. We Help You Live
-              Digital. All your digital needs are solved at one place! Your
-              Partners to True Tech, We are Khat-Tech Enterprises! We help you
-              experience the true technological advancements of this world!
-            </p>
-          </div>
-
-          <div
-            class="col-lg-6 pt-5"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-            data-aos-duration="3000"
-          >
-            <img
-              src="./assets/images/about.png"
-              alt=""
-              height="500px"
-              width="500px"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-
-        <div class="row pt-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-            <img
-              src="./assets/images/about2.png"
-              alt=""
-              height="400px"
-              width="400px"
-              class="img-fluid"
-            />
-          </div>
-
-          <div class="col-lg-6 pt-5">
-            <h3>Hire the right Market Leading Innovators.</h3>
-            <p class="text-justify">
-              At Khat-Tech Enterprises we provide clients with all the latest tech
-              and digital services. With the world progressing with high-end
-              digitalization and data management tools, we aspire to add value
-              to our clients with the likes of services i.e., Artificial
-              Intelligence (AI), Web Development, App Development, Info-Tech
-              Businesses, Digital Marketing, and many more. Khat-Tech Enterprises's 
-              portfolio of vast digital and tech solutions never
-              compromises on quality and effectivity. We help your business,
-              whether it is an established one struggling to sustain itself or a
-              fresh startup, we have got all the latest innovative tools and
-              astonishing talent that will help you triumph in strategic
-              digitalization.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 text-dark pt-5">
-            <h3>Catering all your business Needs.</h3>
-            <p class="text-justify">
-              We transform your business to become digital. Our experts study
-              your business and devise strategies to completely digitalize your
-              organizational structure. Businesses still operating on paper
-              struggle to keep their processes organized and suffer dire
-              consequences. However, digitalizing processes for your institution
-              can sort out a number of your operations. We also help your
-              business digitalize with the proper website development and
-              corresponding mobile application for seamless interaction with
-              your clients. We provide clients with sales and marketing
-              solutions that incorporate the latest tech and digital practices
-              to maximize the results.
-            </p>
-          </div>
-
-          <div
-            class="col-lg-6"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-            data-aos-duration="3000"
-          >
-            <img
-              src="./assets/images/business2.png"
-              alt=""
-              height="400px"
-              width="400px"
-              class="img-fluid"
-            />
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
+  </header>
+  <!-- End Header -->
 
-    <!-- start Services section -->
-    <section class="services" id="services">
-      <div class="container text-center">
-        <div data-aos="zoom-in" data-aos-duration="1000">
-          <h1 class="text-white pt-5 fw-bold">Services</h1>
-          <p class="text-white mb-5">
-            We offer end-to-end next-generation IT services and solutions across
-            <br />industry verticals from small Businesses to Enterprises,
-            worldwide.
-          </p>
+  <!-- Start Banner -->
+  <section class="banner">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 info order-2 order-lg-first order-md-first order-sm-last">
+          <h1 class="developer">Flutter Developer</h1>
+          <p>Energetic Professional Software Engineer skilled in leadership, with a strong foundation
+            in oop, data structures, problem-solving, cross-platform coding, and graphics
+            designing. Seeking to leverage solid skills in leadership, development, and production.</p>
         </div>
 
-        <div class="row" data-aos="zoom-in" data-aos-duration="3000">
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div class="card">
-              <a href="#">
-                <img
-                  src="./assets/images/web.png"
-                  class="card-img-top"
-                  alt="... img-responsive"
-                />
-              </a>
-              <div class="card-body">
-                <p class="text-center">Web Development</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div class="card">
-              <a href="#">
-                <img
-                  src="./assets/images/mobile.png"
-                  class="card-img-top"
-                  alt="... img-responsive"
-                />
-              </a>
-              <div class="card-body">
-                <p class="text-center">Mobile Application Development</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div class="card">
-              <a href="#">
-                <img
-                  src="./assets/images/business.png"
-                  class="card-img-top"
-                  alt="... img-responsive"
-                />
-              </a>
-
-              <div class="card-body">
-                <p class="text-center">Business Development</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" data-aos="zoom-in" data-aos-duration="3000">
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div class="card">
-              <a href="#">
-                <img
-                  src="./assets/images/hosting.png"
-                  class="card-img-top"
-                  alt="... img-responsive"
-                />
-              </a>
-              <div class="card-body">
-                <p class="text-center">Hosting</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div class="card">
-              <a href="#">
-                <img
-                  src="./assets/images/coach2.png"
-                  class="card-img-top"
-                  alt="... img-responsive"
-                />
-              </a>
-              <div class="card-body">
-                <p class="text-center">Coaching & Trainings</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 col-md-6">
-            <div class="card">
-              <a href="#">
-                <img
-                  src="./assets/images/Customer Support.png"
-                  class="card-img-top"
-                  alt="... img-responsive"
-                />
-              </a>
-              <div class="card-body">
-                <p class="text-center">Customer Support</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services section -->
-
-    <!-- start Why Choose Us section -->
-    <section>
-      <div class="pb-5" data-aos="fade-down" data-aos-duration="3000">
-        <div class="container text-center">
-          <div class="col-lg-12 pt-5 pb-5">
-            <h1 class="text-center fw-bold" id="WhyChooseUs">Why Choose Us</h1>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs col-md-4">
-              <img
-                src="https://www.khat-tech.com/web/assets/logo/why-1.jpeg"
-                height="60px"
-                width="60px"
-                class="for-icon-1"
-                alt=""
-              /><br /><br />
-
-              <h3 class="font-weight-bold pt-5">Adaptability</h3>
-              <p class="text-secondary">
-                Adapting to the strings of trends with <br />
-                our novel bag of strategies
-              </p>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs col-md-4">
-              <img
-                src="https://www.khat-tech.com/web/assets/logo/why-2.jpeg"
-                height="60px"
-                width="60px"
-                class="for-icon-1"
-                alt=""
-              /><br /><br />
-              <h3 class="font-weight-bold pt-5">Unity</h3>
-
-              <p class="text-secondary">
-                We re united in our values and pack <br />
-                your bags with creatives to paint a <br />
-                picture of success for you
-              </p>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs col-md-4">
-              <img
-                src="https://www.khat-tech.com/web/assets/logo/why-3.jpeg"
-                height="60px"
-                width="60px"
-                class="for-icon-1"
-                alt=""
-              /><br /><br />
-              <h3 class="font-weight-bold pt-5">Excellence</h3>
-
-              <p class="text-secondary">
-                Always deliver high-quality results,<br />
-                and always strive to improve
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs col-md-4">
-              <img
-                src="https://www.khat-tech.com/web/assets/logo/why-4.jpeg"
-                height="60px"
-                width="60px"
-                class="for-icon-1"
-                alt=""
-              /><br /><br />
-
-              <h3 class="font-weight-bold">Desire</h3>
-              <p class="text-secondary">
-                Either marketing or design &amp; <br />
-                development, our love for ‘all things <br />
-                digital’ never fades.
-              </p>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs col-md-4">
-              <img
-                src="https://www.khat-tech.com/web/assets/logo/why-5.jpeg"
-                height="60px"
-                width="60px"
-                class="for-icon-1"
-                alt=""
-              /><br /><br />
-              <h3 class="font-weight-bold">Creativity</h3>
-
-              <p class="text-secondary">
-                Our marketing strategies are fueled <br />
-                by curiosity &amp; creativity, which thrives <br />
-                us to keep up our game
-              </p>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs col-md-4">
-              <img
-                src="https://www.khat-tech.com/web/assets/logo/why-6.jpeg"
-                height="60px"
-                width="60px"
-                class="for-icon-1"
-                alt=""
-              /><br /><br />
-              <h3 class="font-weight-bold">Transparency</h3>
-
-              <p class="text-secondary">
-                We are 100% transparent internally. <br />
-                We have no hidden secrets. That’s <br />
-                what stands us apart
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Why Choose Us section -->
-
-    <!-- Start Footer section -->
-    <section class="footer pt-5 pb-4">
-      <div class="container-fluid pt-4">
-        <div class="row ms-2">
-          <div class="col-lg-3 col-xs col-md-6 text-center last-res-end">
-            <img
-              src="./assets/images/KhatTech.png"
-              class="img-fluid"
-              height="250px"
-              width="250px"
-              alt=""
-            />
-            <div>
-              <a href="#">
-                <i class="fab fa-facebook-square text-light h3 text-light"></i>
-              </a>
-
-              <a href="#" target="_blank">
-                <i class="fab fa-linkedin-in h3 text-light ms-4"></i
-              ></a>
-
-              <a href="#" target="_blank">
-                <i class="fab fa-instagram h3 text-light ms-4"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-xs col-md-6 pt-3">
-            <p>Quick Links</p>
-
-            <p>
-              <a class="" href="#">About Us</a>
-            </p>
-
-            <p><a class="" href="#">Services</a></p>
-            <p>
-              <a class="" href="#">Contact Us</a>
-            </p>
-            <p>
-              <a class="" href="#">Get A Quote</a>
-            </p>
-            <p>
-              <a class="" href="#">Careers </a>
-            </p>
-          </div>
-          <div class="col-lg-3 col-xs pt-3 col-md-6">
-            <p>Services</p>
-
-            <p>
-              <a class="" href="#">Software Development</a>
-            </p>
-            <p>
-              <a class="" href="#">Digital Marketing</a>
-            </p>
-            <p>
-              <a class="" href="#">Customer Support</a>
-            </p>
-
-            <p>
-              <a class="" href="#">Bussiness Development</a>
-            </p>
-            <p>
-              <a class="" href="#">Game Development</a>
-            </p>
-          </div>
-          <div class="col-lg-4 col-xs pt-3 col-md-6">
-            <p>Reach Us</p>
-            <div>
-              <img
-                src="./assets/images/Gmail.png"
-                height="26px"
-                width="30px"
-                alt=""
-              />
-              <span class="ms-2"> <a href="#">Info@khat-tech.com</a></span>
-            </div>
-
-            <div class="pt-4">
-              <img
-                src="./assets/images/Whatsapp.png"
-                height="30px"
-                width="30px"
-                alt=""
-              />
-              <span class="ms-2"
-                ><a href="https://wa.me/923000377127" target="_blank"
-                  >+92 323 6051899</a
-                ></span
-              >
-            </div>
-
-            <div class="pt-4 d-flex flex-row">
-              <img
-                src="./assets/images/Location.png"
-                target="_blank"
-                height="30px"
-                width="30px"
-                alt=""
-              />
-              <span class="ms-2">
-                <a href="" target="_blank">Faisalabad, Pakistan </a></span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Footer section -->
-
-    <!-- Start Bottom Footer -->
-    <div class="footer-bottom">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <a href="#">
-              <p>Copyright © 2022 Khat-Tech Enterprises</p>
-            </a>
-          </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 order-1 order-lg-last order-md-last order-sm-first" data-aos="fade-up"
+          data-aos-duration="3000">
+          <img src="./assets/images/ChUsama.png" alt="" height="800px" width="600px" class="img-fluid  profilePhoto" />
         </div>
       </div>
     </div>
-    <!-- End bottom footer -->
+  </section>
+  <!-- End Banner -->
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Start Services Section -->
+  <section>
+    <div class="container">
+      <h1 class="text-gray-700 text-5xl font-medium text-center mt-5 mb-5">Services</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-grey shadow-md hover:bg-white">
+            <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+              src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+            <div class="p-6 flex flex-col justify-start">
+              <h5 class="text-gray-900 text-xl font-medium mb-2">Web Development</h5>
+              <p class="text-gray-700 text-base mb-4">
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <!-- AOS Animations Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-grey shadow-md hover:bg-white">
+            <div class="p-6 flex flex-col justify-start">
+              <h5 class="text-gray-900 text-xl font-medium mb-2">Mobile App Development</h5>
+              <p class="text-gray-700 text-base mb-4">
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.
+              </p>
+            </div>
+            <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg rounded-r-lg"
+              src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+          </div>
+        </div>
+  
+      </div>
 
-    <!-- Fontawesome Script -->
-    <script
-      src="https://kit.fontawesome.com/9ae7780baa.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <script>
-      AOS.init();
-    </script>
-  </body>
+      
+
+
+    </div>
+
+    
+
+  </section>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <script src="./assets/js/script.js"></script>
+
+  <!-- AOS Animations Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Fontawesome Script -->
+  <script src="https://kit.fontawesome.com/9ae7780baa.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind Script -->
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
