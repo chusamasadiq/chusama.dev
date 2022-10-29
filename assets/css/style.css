@@ -17,7 +17,7 @@ body {
   bottom: 0;
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
-  background-color:#dce3ea;
+  background-color:#F2F2F2;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -68,50 +68,20 @@ img#logo {
  padding-left: 2rem;
  padding-right: 2rem;
 }
-
-
-/* .card {
-  border: none;
-  background-color: #dce3ea;
-  width: 380px;
-} */
-.icon{
- font-size: 50px;
-}
-
-/* Footer Section */
-.footer {
-  background-color: rgba(92, 92, 92, 0.382);
-  color: #fff;
-}
-
-a {
-  color: rgb(163, 162, 162);
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer {
-  background-color: #252525;
-}
-
-.footer-bottom {
-  height: 80px;
+.card {
+  height: 300px;
   padding: 20px;
-  background-color: maroon;
-  text-align: center;
-  color: #fff;
+  margin-bottom: 20px;
+  background-color:#F2F2F2;
+} 
+
+.card-img-top {
+  height: 200px;
+}
+.card:hover{
+  background-color:#dce3ea
 }
 
-/* Responsive Section */
-/* @media (max-width: 992px) {
-  .banner {
-    height: 900px;
-  } */
 
 @media only screen and (max-width: 600px) {
   .info {
