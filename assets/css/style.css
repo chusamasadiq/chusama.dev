@@ -24,6 +24,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #000;
 }
+h1{
+  font-size: 4em;
+  font-weight: 900;
+}
 
 /* Navbar Section */
 .navbar {
@@ -79,7 +83,11 @@ img#logo {
   height: 200px;
 }
 .card:hover{
-  background-color:#dce3ea
+  background-color:#dce3ea;
+  transition: all 0.3s ease;
+  transform: scale(1.03);
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  border-radius: 20px;
 }
 
 
