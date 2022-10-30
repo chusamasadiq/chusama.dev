@@ -114,10 +114,10 @@ img#logo {
   }
   h1{
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 900;
   }
   .card{
-    height: 400px;
+    height: 380px;
   }
 }
 
