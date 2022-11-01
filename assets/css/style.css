@@ -30,6 +30,14 @@ h1{
   letter-spacing: 2px;
 }
 
+.top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 20px;
+  z-index: 100;
+  display: none;
+}
+
 /* Navbar Section */
 .navbar {
   height: 5rem;
