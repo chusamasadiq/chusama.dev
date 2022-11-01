@@ -80,9 +80,6 @@ img#logo {
   background-color:#F2F2F2;
 } 
 
-/* .card-img-top {
-  height: 200px;
-} */
 .card:hover{
   background-color:#dce3ea;
   transition: all 0.3s ease;
