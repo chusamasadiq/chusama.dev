@@ -17,14 +17,15 @@ body {
   bottom: 0;
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
 }
-h1{
+
+h1 {
   font-size: 4em;
   font-weight: 900;
   letter-spacing: 2px;
@@ -32,8 +33,8 @@ h1{
 
 .top {
   position: fixed;
-  bottom: 7.5rem;
-  right: 20px;
+  bottom: 1rem;
+  right: 10px;
   z-index: 100;
   display: none;
 }
@@ -78,24 +79,26 @@ img#logo {
 
 /* Services Section */
 .services {
- padding-left: 2rem;
- padding-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
 .card {
   height: 480px;
   padding: 20px;
   margin-bottom: 20px;
-  background-color:#F2F2F2;
-} 
+  background-color: #F2F2F2;
+}
 
-.card:hover{
-  background-color:#dce3ea;
+.card:hover {
+  background-color: #dce3ea;
   transition: all 0.3s ease;
   transform: scale(1.03);
   box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
   border-radius: 20px;
 }
-.mobImage:hover{
+
+.mobImage:hover {
   transition: all 0.3s ease;
   transform: scale(1.03);
 }
@@ -122,17 +125,15 @@ img#logo {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  h1{
+
+  h1 {
     font-size: 2em;
     font-weight: 900;
   }
-  .card{
+
+  .card {
     height: 390px;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  
-}
-
-
+@media only screen and (max-width: 992px) {}
