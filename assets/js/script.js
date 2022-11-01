@@ -1,3 +1,4 @@
+// Show Move Up Arrow
 $(window).on('scroll load', function () {
     $('#menu').removeClass('fa-times');
     $('header').removeClass('toggle');
@@ -10,6 +11,7 @@ $(window).on('scroll load', function () {
 
 });
 
+// Smooth Move Up Scroll
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
