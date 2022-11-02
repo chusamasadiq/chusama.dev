@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
 
 @font-face {
   font-family: Blueberry;
@@ -68,10 +70,10 @@ img#logo {
 }
 
 .developer {
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 900;
   letter-spacing: 4px;
-  font-family: 'Blueberry';
+  font-family: 'Rancho', cursive;
 }
 
 /* End Banner Section */
