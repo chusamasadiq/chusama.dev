@@ -127,6 +127,7 @@ img#logo {
   .developer {
     align-items: center;
     font-size: 50px;
+    font-weight: 600;
     letter-spacing: 2px;
   }
 
