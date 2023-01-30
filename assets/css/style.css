@@ -17,6 +17,9 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
   background-color: #F2F2F2;
@@ -156,4 +159,29 @@ img#logo {
   }
 }
 
-@media only screen and (max-width: 992px) {}
+span {
+  position:fixed;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: ani 10s linear infinite;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+@keyframes ani {
+  0% {
+      transform: scale(0) translateY(0) rotate(0deg);
+      opacity: 0;
+  }
+
+  20% {
+      opacity: 0.3;
+  }
+
+  100% {
+      transform: scale(1) translateY(-800%) rotate(360deg);
+      opacity: 0;
+  }
+
+}
