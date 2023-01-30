@@ -159,13 +159,11 @@ img#logo {
   }
 }
 
-span {
+spanBox {
   position:fixed;
   border-radius: 50%;
   background-color: #fff;
   animation: ani 10s linear infinite;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 

@@ -27,7 +27,7 @@ let color = ['red', 'green', 'brown', 'blue']
 function square() {
     let section = document.querySelector('.banner');
 
-    let square = document.createElement('span');
+    let square = document.createElement('spanBox');
 
     let size = Math.random() * 30;
 
