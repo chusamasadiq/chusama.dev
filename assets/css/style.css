@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+@font-face {
+  font-family: Blueberry;
+  src: url(../font/Blueberry\ .ttf);
+}
+
+
+/* CSS Common Properties*/
+body {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+  background-color: #F2F2F2;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* End CSS Common Properties*/
+
+/* Start Navbar Section */
+.navbar {
+  height: 5rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  background-color: #dce3ea;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-nav .nav-link.active {
+  color: #252525;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+/* End Navbar Section */
+
+/* Start Banner Section */
+.info {
+  padding-top: 10rem;
+  padding-left: 3rem;
+}
+
+img#logo {
+  height: 45px;
+}
+
+.profilePhoto {
+  opacity: 0.7;
+}
+
+.developer {
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-family: 'Rancho', cursive;
+}
+
+/* End Banner Section */
+
+/* Start Services Section */
+.services {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.card {
+  height: 480px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #F2F2F2;
+}
+
+.card:hover {
+  background-color: #dce3ea;
+  transition: all 0.3s ease;
+  transform: scale(1.03);
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  border-radius: 20px;
+}
+
+.mobImage:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.03);
+}
+
+/* End Services Section */
+
+/* Move Up Arrow */
+.top {
+  position: fixed;
+  bottom: 1rem;
+  right: 10px;
+  z-index: 100;
+  display: none;
+}
+
+
+/* Responsive Design */
+
+@media only screen and (max-width: 600px) {
+  .info {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .developer {
+    align-items: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+
+  .text-3xl{
+    font-size: 1.3rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 0rem;
+  }
+
+  .services {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+
+  .card {
+    height: 390px;
+  }
+}
+
+spanBox {
+  position:fixed;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: ani 10s linear infinite;
+}
+
+
+@keyframes ani {
+  0% {
+      transform: scale(0) translateY(0) rotate(0deg);
+      opacity: 0;
+  }
+
+  20% {
+      opacity: 0.3;
+  }
+
+  100% {
+      transform: scale(1) translateY(-800%) rotate(360deg);
+      opacity: 0;
+  }
+
+}
