@@ -56,12 +56,16 @@ h1 {
   padding-left: 3rem;
 }
 
-img#logo {
+img#navbar-picture {
+  height: 45px;
+}
+
+img#offcanvas-picture {
   height: 45px;
 }
 
 .profilePhoto {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .developer {
@@ -110,7 +114,6 @@ img#logo {
   display: none;
 }
 
-
 /* Responsive Design */
 
 @media only screen and (max-width: 600px) {
@@ -125,7 +128,7 @@ img#logo {
     letter-spacing: 3px;
   }
 
-  .text-3xl{
+  .text-3xl {
     font-size: 1.3rem;
     text-align: center;
     justify-content: center;
@@ -152,26 +155,119 @@ img#logo {
 }
 
 spanBox {
-  position:fixed;
+  position: fixed;
   border-radius: 50%;
   background-color: #fff;
   animation: ani 10s linear infinite;
 }
 
+.footer {
+  background-color: #252525;
+}
 
 @keyframes ani {
   0% {
-      transform: scale(0) translateY(0) rotate(0deg);
-      opacity: 0;
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
   }
 
   20% {
-      opacity: 0.3;
+    opacity: 0.3;
   }
 
   100% {
-      transform: scale(1) translateY(-800%) rotate(360deg);
-      opacity: 0;
+    transform: scale(1) translateY(-800%) rotate(360deg);
+    opacity: 0;
   }
 
 }
+
+/* Dark Theme */
+
+.dark-theme {
+  background-color: #000;
+}
+
+/* Start Navbar Section*/
+.dark-theme .navbar {
+  background-color: #000;
+  /* box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2); */
+}
+
+.dark-theme a.nav-link {
+  color: #ffffff7e;
+}
+
+.dark-theme .navbar-nav .nav-link.active,
+.dark-theme .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.dark-theme .navbar-toggler {
+  border: 1px solid white;
+}
+
+.dark-theme .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke= 'white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.dark-theme #theme-toggle {
+  color: #ffffff7e;
+}
+
+.dark-theme #theme-toggle:hover {
+  color: white;
+}
+
+/* End Navbar Section*/
+
+
+.dark-theme h1 {
+  color: #fff;
+}
+
+/* Start Card Section*/
+.dark-theme .card {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid;
+  border-color: #fff;
+}
+
+.dark-theme .card:hover {
+  background-color: #252525;
+}
+
+/* End Card Section*/
+
+.dark-theme p.pt-2 {
+  color: white;
+}
+
+.dark-theme .profilePhoto {
+  opacity: 1;
+}
+
+
+/* Start Offcanvas Section*/
+.dark-theme .offcanvas {
+  background-color: #252525;
+  color: #fff;
+}
+
+.dark-theme .btn-close {
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+
+}
+
+/* End Offcanvas Section*/
+
+
+/* Start Footer Section*/
+.dark-theme footer {
+  background-color: #252525;
+}
+
+/* End Footer Section*/
+
+/* End Dark Theme */

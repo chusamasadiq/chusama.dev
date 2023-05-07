@@ -40,7 +40,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./assets/images/Usama.svg" id="logo" alt="">
+          <img id="navbar-picture" class="navbar-picture" src="./assets/images/light-logo.svg" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +52,11 @@
             <a class="nav-link me-3" href="#services">Services</a>
             <a class="nav-link me-3" href="#portfolio">Portfolio</a>
             <a class="nav-link me-3" href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-toggle nav-link">
+              <i class="fa fa-sun-o light-icon"></i>
+              <i class="fas fa-moon dark-icon" style="display: none;"></i>
+              <span class="theme-text">Light</span>
+            </button>
           </div>
         </div>
       </div>
@@ -61,7 +66,7 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <a class="navbar-brand offcanvas-title" href="#">
-          <img src="./assets/images/Usama.svg" id="logo" alt="" srcset="">
+          <img id="offcanvas-picture" class="offcanvas-picture" src="./assets/images/light-logo.svg" alt="Logo">
         </a>
         <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
           <span class="btn-close"></span>
@@ -81,7 +86,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <div class="flex mt-2 space-x-6 sm: sm:mt-0">
+          <div id="offcanvas-theme" class="d-lg-none">
+            <button id="offcanvas-theme-toggle" class="theme-toggle nav-link">
+              <i class="fa fa-sun-o light-icon"></i>
+              <i class="fas fa-moon dark-icon" style="display: none;"></i>
+              <span class="theme-text">Light</span>
+            </button>
+          </div>
+          <div class="flex mt-3 space-x-6 sm: sm:mt-0">
             <a href="https://www.facebook.com/mianusamasadiq" target="_blank"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -121,6 +133,10 @@
               </svg>
             </a>
 
+            <a href="https://www.youtube.com/@How-To-Programming/" target="_blank">
+              <i class="fa-brands fa-youtube text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
+            </a>
+
           </div>
         </ul>
       </div>
@@ -136,7 +152,8 @@
           <h1 class="developer">Flutter Developer</h1>
           <p class="text-secondary">
             Enthusiastic professional software engineer skilled in leadership with a strong foundation in OOP, Web,
-            Cross-Platform Coding, Responsive Layout Designs, API Integration, Push Notifications, State Management, Google Maps, and Design Principles. I work on projects passionately,
+            Cross-Platform Coding, Responsive Layout Designs, API Integration, Push Notifications, State Management,
+            Google Maps, and Design Principles. I work on projects passionately,
             but I’ll be happy to discuss new opportunities. <b>Let’s get in touch!</b>
           </p>
           <div class="flex mt-3 space-x-6 sm: sm:mt-0">
@@ -181,7 +198,7 @@
 
             <a href="https://www.youtube.com/@How-To-Programming/" target="_blank">
               <i class="fa-brands fa-youtube text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>            
+            </a>
 
           </div>
         </div>
@@ -260,7 +277,7 @@
           data-tabs-toggle="#myTabContent" role="tablist">
           <li class="mr-2" role="presentation">
             <button
-              class="inline-block p-4 rounded-t-lg border-b-2 text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500"
+              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
               id="web-tab" data-tabs-target="#web" type="button" role="tab" aria-controls="web"
               aria-selected="false">Web</button>
           </li>
@@ -285,8 +302,7 @@
           <p class="text-sm text-gray-500 dark:text-gray-400"> Web Application Development</p>
         </div>
         <div class="container" data-aos="fade-down" data-aos-duration="3000">
-          <div class="row hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="mobile" role="tabpanel"
-            aria-labelledby="mobile-tab">
+          <div class="row p-4 hidden" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
             <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
               <a href="https://www.youtube.com/watch?v=f5qYYlgRa7E&ab_channel=HowToProgramming" target="_blank">
                 <img src="./assets/images/FAS.png" height="600px" width="300px" class="mobImage"
@@ -384,7 +400,7 @@
   <!-- End Portfolio Section   -->
 
   <!-- Footer -->
-  <footer class="text-center text-white" id="contact" style="background-color: #3f51b5">
+  <footer class="text-center text-white footer">
     <!-- Grid container -->
     <div class="container">
       <!-- Section: Links -->
@@ -474,7 +490,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      Copyright © 2022. All Rights Reserved.
+      Copyright © 2023. All Rights Reserved.
       <a class="text-white" href="index.html">Usama Sadiq</a>
     </div>
     <!-- Copyright -->
