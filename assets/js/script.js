@@ -88,5 +88,3 @@ function toggleTheme() {
         offcanvasPicture.src = './assets/images/light-logo.svg';
     }
 }
-
-

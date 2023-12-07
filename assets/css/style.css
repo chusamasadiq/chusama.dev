@@ -162,7 +162,7 @@ spanBox {
 }
 
 .footer {
-  background-color: #252525;
+  background-color: #0e1421;
 }
 
 @keyframes ani {
@@ -185,13 +185,12 @@ spanBox {
 /* Dark Theme */
 
 .dark-theme {
-  background-color: #000;
+  background-color: #0e1421;
 }
 
 /* Start Navbar Section*/
 .dark-theme .navbar {
-  background-color: #000;
-  /* box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2); */
+  background-color: #0e1421;
 }
 
 .dark-theme a.nav-link {
@@ -228,14 +227,14 @@ spanBox {
 
 /* Start Card Section*/
 .dark-theme .card {
-  background-color: #000;
+  background-color: #0D121D;
   color: #fff;
   border: 1px solid;
   border-color: #fff;
 }
 
 .dark-theme .card:hover {
-  background-color: #252525;
+  background-color: #0e1421;
 }
 
 /* End Card Section*/
@@ -251,7 +250,7 @@ spanBox {
 
 /* Start Offcanvas Section*/
 .dark-theme .offcanvas {
-  background-color: #252525;
+  background-color: #0e1421;
   color: #fff;
 }
 
@@ -265,7 +264,7 @@ spanBox {
 
 /* Start Footer Section*/
 .dark-theme footer {
-  background-color: #252525;
+  background-color: #0D121D;
 }
 
 /* End Footer Section*/
