@@ -34,7 +34,7 @@ I am deeply passionate about my work and always open to discussing new opportuni
 [linkedin]:  https://www.linkedin.com/in/chusamasadiq/
 [twitter]:   https://twitter.com/MianUsamaSadiq
 [website]:   https://chusama.dev/
-[youtube]:   https://www.youtube.com/channel/UCQTcyzcyVgruoTWul6QEUyA
+[youtube]:   https://www.youtube.com/channel/UCQTcyzcyVgruoTWul6QEUyA  
 
 ## License
 
