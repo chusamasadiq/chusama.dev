@@ -1,4 +1,4 @@
-# Flutter Developer
+# Usama Sadiq | Software Engieer | Flutter Developer
 
 Hello there! 👋 I'm a passionate professional software engineer specializing in Flutter development. I possess strong leadership skills and a solid foundation in Object-Oriented Programming (OOP), Web technologies, Cross-Platform Coding, Responsive Layout Designs, API Integration, Push Notifications, State Management, Google Maps, and Design Principles.
 
@@ -34,8 +34,7 @@ I am deeply passionate about my work and always open to discussing new opportuni
 [linkedin]:  https://www.linkedin.com/in/chusamasadiq/
 [twitter]:   https://twitter.com/MianUsamaSadiq
 [website]:   https://chusama.dev/
-[youtube]:   https://www.youtube.com/channel/UCQTcyzcyVgruoTWul6QEUyA  
-
+[youtube]:   https://www.youtube.com/channel/UCQTcyzcyVgruoTWul6QEUyA
 
 ## License  
 
