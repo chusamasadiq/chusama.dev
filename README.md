@@ -36,5 +36,6 @@ I am deeply passionate about my work and always open to discussing new opportuni
 [website]:   https://chusama.dev/
 [youtube]:   https://www.youtube.com/channel/UCQTcyzcyVgruoTWul6QEUyA
 
+## License  
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
