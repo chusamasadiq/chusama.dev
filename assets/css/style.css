@@ -64,9 +64,9 @@ img#offcanvas-picture {
   height: 45px;
 }
 
-.profilePhoto {
+/* .profilePhoto {
   opacity: 0.8;
-}
+} */
 
 .developer {
   font-size: 90px;
@@ -243,9 +243,9 @@ spanBox {
   color: white;
 }
 
-.dark-theme .profilePhoto {
+/* .dark-theme .profilePhoto {
   opacity: 1;
-}
+} */
 
 
 /* Start Offcanvas Section*/
