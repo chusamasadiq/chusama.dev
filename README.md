@@ -18,7 +18,8 @@ Hello there! 👋 I'm a passionate professional software engineer specializing i
 
 I am deeply passionate about my work and always open to discussing new opportunities and collaborations. Feel free to get in touch!
 
-Let's connect:
+## Let's connect:
+
 [<img align="left" alt=" | Facebook" width="30px" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" />][facebook]
 [<img align="left" alt=" | Whatsapp" width="30px" src="https://img.icons8.com/color/2x/whatsapp--v1.png" />][whatsapp]
 [<img align="left" alt=" | Instagram" width="30px" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" />][instagram]
