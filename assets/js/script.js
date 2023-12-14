@@ -64,26 +64,29 @@ const offcanvasThemeText = offcanvasDarkModeButton.querySelector('.theme-text');
 
 darkModeButton.addEventListener('click', toggleTheme);
 offcanvasDarkModeButton.addEventListener('click', toggleTheme);
-
 function toggleTheme() {
     document.body.classList.toggle('dark-theme');
+    const isDarkTheme = document.body.classList.contains('dark-theme');
 
-    if (document.body.classList.contains('dark-theme')) {
-        lightIcon.style.display = 'none';
-        offcanvasLightIcon.style.display = 'none';
-        darkIcon.style.display = 'inline-block';
-        offcanvasDarkIcon.style.display = 'inline-block';
-        themeText.textContent = 'Dark';
-        offcanvasThemeText.textContent = 'Dark';
-        navbarPicture.src = './assets/images/dark-logo.svg';
-        offcanvasPicture.src = './assets/images/dark-logo.svg';
-    } else {
+    // Dark Theme
+    if (isDarkTheme) {
         lightIcon.style.display = 'inline-block';
         offcanvasLightIcon.style.display = 'inline-block';
         darkIcon.style.display = 'none';
         offcanvasDarkIcon.style.display = 'none';
         themeText.textContent = 'Light';
         offcanvasThemeText.textContent = 'Light';
+        navbarPicture.src = './assets/images/dark-logo.svg';
+        offcanvasPicture.src = './assets/images/dark-logo.svg';
+    }
+    // Light Theme
+     else {
+        lightIcon.style.display = 'none';
+        offcanvasLightIcon.style.display = 'none';
+        darkIcon.style.display = 'inline-block';
+        offcanvasDarkIcon.style.display = 'inline-block';
+        themeText.textContent = 'Dark';
+        offcanvasThemeText.textContent = 'Dark';
         navbarPicture.src = './assets/images/light-logo.svg';
         offcanvasPicture.src = './assets/images/light-logo.svg';
     }
