@@ -80,7 +80,7 @@ function toggleTheme() {
         offcanvasPicture.src = './assets/images/dark-logo.svg';
     }
     // Light Theme
-     else {
+    else {
         lightIcon.style.display = 'none';
         offcanvasLightIcon.style.display = 'none';
         darkIcon.style.display = 'inline-block';
