@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
@@ -8,35 +7,34 @@
 
 /* CSS Common Properties*/
 body {
+  /* Reset */
   margin: 0;
   padding: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   overflow-x: hidden;
   position: relative;
   box-sizing: border-box;
+  /* Font */
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  /* Colors */
   background-color: #F2F2F2;
+  color: #000;
+  /* Text Rendering */
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000;
 }
 
 h1 {
+  /* Heading Style */
   font-size: 4em;
   font-weight: 900;
   letter-spacing: 2px;
 }
 
-/* End CSS Common Properties*/
-
 /* Start Navbar Section */
 .navbar {
+  /* Navbar Style */
   height: 5rem;
   padding-left: 3rem;
   padding-right: 1rem;
@@ -45,11 +43,13 @@ h1 {
 }
 
 .navbar-nav .nav-link.active {
+  /* Active Navbar Link */
   color: #000;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
+  /* Navbar Link Hover */
   color: #000;
 }
 
@@ -57,15 +57,18 @@ h1 {
 
 /* Start Banner Section */
 .info {
+  /* Banner Style */
   padding-top: 10rem;
   padding-left: 3rem;
 }
 
 img#navbar-picture {
+  /* Navbar Picture Style */
   height: 45px;
 }
 
 img#offcanvas-picture {
+  /* Offcanvas Picture Style */
   height: 45px;
 }
 
@@ -74,6 +77,7 @@ img#offcanvas-picture {
 } */
 
 .developer {
+  /* Developer Name Style */
   font-size: 70px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -84,11 +88,13 @@ img#offcanvas-picture {
 
 /* Start Services Section */
 .services {
+  /* Services Section Style */
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .card {
+  /* Card Style */
   height: 480px;
   padding: 20px;
   margin-bottom: 20px;
@@ -96,6 +102,7 @@ img#offcanvas-picture {
 }
 
 .card:hover {
+  /* Card Hover Effect */
   background-color: #dce3ea;
   transition: all 0.3s ease;
   transform: scale(1.03);
@@ -104,6 +111,7 @@ img#offcanvas-picture {
 }
 
 .mobImage:hover {
+  /* Mobile Image Hover Effect */
   transition: all 0.3s ease;
   transform: scale(1.03);
 }
@@ -112,6 +120,7 @@ img#offcanvas-picture {
 
 /* Move Up Arrow */
 .top {
+  /* Move Up Arrow Style */
   position: fixed;
   bottom: 1rem;
   right: 10px;
@@ -123,43 +132,51 @@ img#offcanvas-picture {
 
 @media only screen and (max-width: 600px) {
   .info {
+    /* Responsive Banner */
     padding-top: 2rem;
     padding-left: 2rem;
   }
 
   .developer {
+    /* Responsive Developer Name */
     align-items: center;
     font-size: 35px;
     letter-spacing: 3px;
   }
 
   .text-3xl {
+    /* Responsive Text */
     font-size: 1.3rem;
     text-align: center;
     justify-content: center;
   }
 
   .navbar {
+    /* Responsive Navbar */
     padding-left: 1rem;
     padding-right: 0rem;
   }
 
   .services {
+    /* Responsive Services */
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   h1 {
+    /* Responsive Heading */
     font-size: 2em;
     font-weight: 900;
   }
 
   .card {
+    /* Responsive Card */
     height: 390px;
   }
 }
 
 spanBox {
+  /* Span Box Style */
   position: fixed;
   border-radius: 50%;
   background-color: #fff;
@@ -167,10 +184,12 @@ spanBox {
 }
 
 .footer {
+  /* Footer Style */
   background-color: #0e1421;
 }
 
 @keyframes ani {
+  /* Keyframes Animation */
   0% {
     transform: scale(0) translateY(0) rotate(0deg);
     opacity: 0;
@@ -184,42 +203,49 @@ spanBox {
     transform: scale(1) translateY(-800%) rotate(360deg);
     opacity: 0;
   }
-
 }
 
 /* Dark Theme */
 
 .dark-theme {
+  /* Dark Theme Style */
   background-color: #0e1421;
 }
 
 /* Start Navbar Section*/
 .dark-theme .navbar {
+  /* Dark Navbar Style */
   background-color: #0e1421;
 }
 
 .dark-theme a.nav-link {
+  /* Dark Navbar Link Style */
   color: #ffffff7e;
 }
 
 .dark-theme .navbar-nav .nav-link.active,
 .dark-theme .navbar-nav .nav-link:hover {
+  /* Dark Navbar Link Active/Hover Style */
   color: #fff;
 }
 
 .dark-theme .navbar-toggler {
+  /* Dark Navbar Toggler Style */
   border: 1px solid white;
 }
 
 .dark-theme .navbar-toggler-icon {
+  /* Dark Navbar Toggler Icon Style */
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke= 'white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
 .dark-theme #theme-toggle {
+  /* Dark Theme Toggle Style */
   color: #ffffff7e;
 }
 
 .dark-theme #theme-toggle:hover {
+  /* Dark Theme Toggle Hover Style */
   color: white;
 }
 
@@ -227,11 +253,13 @@ spanBox {
 
 
 .dark-theme h1 {
+  /* Dark Theme Heading Style */
   color: #fff;
 }
 
 /* Start Card Section*/
 .dark-theme .card {
+  /* Dark Card Style */
   background-color: #0D121D;
   color: #fff;
   border: 1px solid;
@@ -239,6 +267,7 @@ spanBox {
 }
 
 .dark-theme .card:hover {
+  /* Dark Card Hover Effect */
   background-color: #0e1421;
 }
 
@@ -246,23 +275,19 @@ spanBox {
 
 .dark-theme p.pt-2,
 .dark-theme p.mt-2 {
+  /* Dark Theme Paragraph Style */
   color: #ffffff7e;
 }
 
-
-
-/* .dark-theme .profilePhoto {
-  opacity: 1;
-} */
-
-
 /* Start Offcanvas Section*/
 .dark-theme .offcanvas {
+  /* Dark Offcanvas Style */
   background-color: #0e1421;
   color: #fff;
 }
 
 .dark-theme .btn-close {
+  /* Dark Close Button Style */
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 
 }
@@ -272,6 +297,7 @@ spanBox {
 
 /* Start Footer Section*/
 .dark-theme footer {
+  /* Dark Footer Style */
   background-color: #0D121D;
 }
 
