@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: RegularBrush;
+  src: url('/assets/fonts/Regular Brush.otf') format('opentype');
+}
 
 /* CSS Common Properties*/
 body {
@@ -12,7 +17,7 @@ body {
   overflow-x: hidden;
   position: relative;
   box-sizing: border-box;
-  font-family: "Public Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   background-color: #F2F2F2;
   font-size: 16px;
@@ -69,10 +74,10 @@ img#offcanvas-picture {
 } */
 
 .developer {
-  font-size: 90px;
-  font-weight: 900;
-  letter-spacing: 4px;
-  font-family: 'Rancho', cursive;
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: 'RegularBrush';
 }
 
 /* End Banner Section */
