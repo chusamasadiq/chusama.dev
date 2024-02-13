@@ -45,7 +45,7 @@ h1 {
 }
 
 .navbar-nav .nav-link.active {
-  color: #252525;
+  color: #000;
 }
 
 .navbar-nav .nav-link.active,
@@ -244,9 +244,12 @@ spanBox {
 
 /* End Card Section*/
 
-.dark-theme p.pt-2 {
-  color: white;
+.dark-theme p.pt-2,
+.dark-theme p.mt-2 {
+  color: #ffffff7e;
 }
+
+
 
 /* .dark-theme .profilePhoto {
   opacity: 1;
