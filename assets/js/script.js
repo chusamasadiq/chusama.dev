@@ -15,30 +15,6 @@ $('a[href*="#"]').on('click', function (e) {
     }, 500, 'linear');
 });
 
-// Generate squares with random properties
-function generateSquare() {
-    const section = document.querySelector('.banner');
-    const square = document.createElement('spanBox');
-    const size = Math.random() * 30;
-
-    // Set random properties for square element
-    square.style.cssText = `
-        width: ${20 + size}px;
-        height: ${20 + size}px;
-        top: ${Math.random() * innerHeight}px;
-        left: ${Math.random() * innerWidth}px;
-        background: ${['red', 'green', 'brown', 'blue'][Math.floor(Math.random() * 4)]};
-    `;
-
-    section.appendChild(square);
-
-    // Remove square after 5 seconds
-    setTimeout(() => square.remove(), 5000);
-}
-
-// Generate squares at an interval
-setInterval(generateSquare, 50);
-
 // Dark mode toggle functionality
 const darkModeButton = document.querySelector('#theme-toggle');
 const offcanvasDarkModeButton = document.querySelector('#offcanvas-theme-toggle');
@@ -99,4 +75,32 @@ document.addEventListener("DOMContentLoaded", function () {
   
     typeText(texts[index]);
   });
-  
+
+
+  let color = ['red', 'green', 'brown', 'blue']
+function square() {
+    let section = document.querySelector('.banner');
+
+    let square = document.createElement('spanBox');
+
+    let size = Math.random() * 30;
+
+    square.style.width = 20 + size + 'px';
+
+    square.style.height = 20 + size + 'px';
+
+    square.style.top = Math.random() * innerHeight + 'px';
+
+    square.style.left = Math.random() * innerWidth + 'px';
+
+    let bg = color[Math.floor(Math.random() * color.length)];
+
+    square.style.background = bg;
+
+    section.appendChild(square);
+
+    setTimeout(() => {
+        square.remove();
+    }, 5000)
+}
+setInterval(square, 50);

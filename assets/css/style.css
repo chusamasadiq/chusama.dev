@@ -133,6 +133,14 @@ img#offcanvas-picture {
   }
 }
 
+spanBox {
+  /* Span Box Style */
+  position: fixed;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: ani 10s linear infinite;
+}
+
 /* Footer Section */
 .footer {
   background-color: #0e1421;
