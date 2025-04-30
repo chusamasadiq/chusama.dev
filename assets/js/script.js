@@ -2,13 +2,9 @@
 $(window).on('scroll load', function () {
     $('#menu').removeClass('fa-times');
     $('header').removeClass('toggle');
-
-    if ($(window).scrollTop() > 600) {
-        $('.top').show();
-    } else {
-        $('.top').hide();
-    }
-
+    
+    // Toggle visibility of the move-up arrow based on scroll position
+    $('.top').toggle($(window).scrollTop() > 600);
 });
 
 // Smooth Move Up Scroll
@@ -16,78 +12,69 @@ $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top,
-    },
-        500,
-        'linear'
-    );
-
+    }, 500, 'linear');
 });
 
-let color = ['red', 'green', 'brown', 'blue']
-function square() {
-    let section = document.querySelector('.banner');
+// Generate squares with random properties
+function generateSquare() {
+    const section = document.querySelector('.banner');
+    const square = document.createElement('spanBox');
+    const size = Math.random() * 30;
 
-    let square = document.createElement('spanBox');
-
-    let size = Math.random() * 30;
-
-    square.style.width = 20 + size + 'px';
-
-    square.style.height = 20 + size + 'px';
-
-    square.style.top = Math.random() * innerHeight + 'px';
-
-    square.style.left = Math.random() * innerWidth + 'px';
-
-    let bg = color[Math.floor(Math.random() * color.length)];
-
-    square.style.background = bg;
+    // Set random properties for square element
+    square.style.cssText = `
+        width: ${20 + size}px;
+        height: ${20 + size}px;
+        top: ${Math.random() * innerHeight}px;
+        left: ${Math.random() * innerWidth}px;
+        background: ${['red', 'green', 'brown', 'blue'][Math.floor(Math.random() * 4)]};
+    `;
 
     section.appendChild(square);
 
-    setTimeout(() => {
-        square.remove();
-    }, 5000)
+    // Remove square after 5 seconds
+    setTimeout(() => square.remove(), 5000);
 }
-setInterval(square, 50);
 
-const navbarPicture = document.querySelector('#navbar-picture');
-const offcanvasPicture = document.querySelector('#offcanvas-picture');
+// Generate squares at an interval
+setInterval(generateSquare, 50);
+
+// Dark mode toggle functionality
 const darkModeButton = document.querySelector('#theme-toggle');
 const offcanvasDarkModeButton = document.querySelector('#offcanvas-theme-toggle');
-const lightIcon = darkModeButton.querySelector('.light-icon');
-const offcanvasLightIcon = offcanvasDarkModeButton.querySelector('.light-icon');
-const darkIcon = darkModeButton.querySelector('.dark-icon');
-const offcanvasDarkIcon = offcanvasDarkModeButton.querySelector('.dark-icon');
-const themeText = darkModeButton.querySelector('.theme-text');
-const offcanvasThemeText = offcanvasDarkModeButton.querySelector('.theme-text');
+const navbarPicture = document.querySelector('#navbar-picture');
+const offcanvasPicture = document.querySelector('#offcanvas-picture');
+const lightIcon = document.querySelector('.light-icon');
+const offcanvasLightIcon = document.querySelector('.light-icon');
+const darkIcon = document.querySelector('.dark-icon');
+const offcanvasDarkIcon = document.querySelector('.dark-icon');
+const themeText = document.querySelector('.theme-text');
+const offcanvasThemeText = document.querySelector('.theme-text');
 
-darkModeButton.addEventListener('click', toggleTheme);
-offcanvasDarkModeButton.addEventListener('click', toggleTheme);
-function toggleTheme() {
+const toggleTheme = () => {
     document.body.classList.toggle('dark-theme');
     const isDarkTheme = document.body.classList.contains('dark-theme');
 
-    // Dark Theme
-    if (isDarkTheme) {
-        lightIcon.style.display = 'inline-block';
-        offcanvasLightIcon.style.display = 'inline-block';
-        darkIcon.style.display = 'none';
-        offcanvasDarkIcon.style.display = 'none';
-        themeText.textContent = 'Light';
-        offcanvasThemeText.textContent = 'Light';
-        navbarPicture.src = './assets/images/dark-logo.svg';
-        offcanvasPicture.src = './assets/images/dark-logo.svg';
-    }
-    // Light Theme
-    else {
-        lightIcon.style.display = 'none';
-        offcanvasLightIcon.style.display = 'none';
-        darkIcon.style.display = 'inline-block';
-        offcanvasDarkIcon.style.display = 'inline-block';
-        themeText.textContent = 'Dark';
-        offcanvasThemeText.textContent = 'Dark';
-        navbarPicture.src = './assets/images/light-logo.svg';
-        offcanvasPicture.src = './assets/images/light-logo.svg';
-    }
-}
+    // Update icons, texts, and images based on the theme
+    const [light, dark] = isDarkTheme ? ['inline-block', 'none'] : ['none', 'inline-block'];
+    const [lightText, darkText] = isDarkTheme ? ['Light', 'Dark'] : ['Dark', 'Light'];
+    const logo = isDarkTheme ? './assets/images/dark-logo.svg' : './assets/images/light-logo.svg';
+
+    // Toggle visibility of icons
+    lightIcon.style.display = light;
+    offcanvasLightIcon.style.display = light;
+    darkIcon.style.display = dark;
+    offcanvasDarkIcon.style.display = dark;
+
+    // Update theme text
+    themeText.textContent = lightText;
+    offcanvasThemeText.textContent = lightText;
+
+    // Change logo based on the theme
+    navbarPicture.src = logo;
+    offcanvasPicture.src = logo;
+};
+
+// Attach event listeners for theme toggle buttons
+darkModeButton.addEventListener('click', toggleTheme);
+offcanvasDarkModeButton.addEventListener('click', toggleTheme);

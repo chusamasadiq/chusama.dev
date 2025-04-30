@@ -7,39 +7,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Seo Meta -->
+  <!-- SEO Meta -->
   <meta name="title" content="Usama Sadiq | Flutter Developer">
-  <meta name="description"
-    content="Enthusiastic professional software engineer skilled in leadership with a strong foundation in OOP, Web, Cross-Platform Coding, Responsive Layout Designs, API Integration, Push Notifications, State Management, Google Maps, and Design Principles. I work on projects passionately, but I’ll be happy to discuss new opportunities. Let’s get in touch!">
-  <meta name="keywords"
-    content="Mobile App Developer, Flutter Developer, Flutter, Mobile, Web, Web Development, Developer, Software Engineer">
+  <meta name="description" content="Enthusiastic professional software engineer skilled in leadership with a strong foundation in OOP, Web, Cross-Platform Coding, Responsive Layout Designs, API Integration, Push Notifications, State Management, Google Maps, and Design Principles. I work on projects passionately, but I’ll be happy to discuss new opportunities. Let’s get in touch!">
+  <meta name="keywords" content="Mobile App Developer, Data Scienctist, Data Science, Python, Flutter Developer, Flutter, Mobile, Web, Web Development, Developer, Software Engineer">
   <meta property="og:image" content="https://chusama.dev/assets/images/ChUsama.png">
   <meta property="og:url" content="https://chusama.dev">
   <meta name="author" content="Usama Sadiq">
 
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
   <!-- Favicons -->
-  <link href="./assets/images/Usama.webp" rel="icon" />
+  <link rel="icon" href="./assets/images/Usama.webp" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"></noscript>
 
   <!-- Tailwind CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <link rel="preload" as="style" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"></noscript>
 
   <!-- AOS Animations CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://unpkg.com/aos@2.3.1/dist/aos.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preload" as="style" href="./assets/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./assets/css/style.css"></noscript>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHX2M1YXFP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-CHX2M1YXFP');
   </script>
 </head>
@@ -50,7 +56,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img id="navbar-picture" class="navbar-picture" src="./assets/images/light-logo.svg" alt="Logo">
+          <img id="navbar-picture" class="navbar-picture" src="./assets/images/light-logo.svg" alt="Logo" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +64,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <a class="nav-link active me-3" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active me-3" href="index.html">Home</a>
             <a class="nav-link me-3" href="#services">Services</a>
             <a class="nav-link me-3" href="#portfolio">Portfolio</a>
             <a class="nav-link me-3" href="#contact">Contact</a>
@@ -72,11 +78,11 @@
       </div>
     </nav>
 
-    <!-- Navbar for Mobile View -->
+    <!-- Mobile Navbar -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <a class="navbar-brand offcanvas-title" href="#">
-          <img id="offcanvas-picture" class="offcanvas-picture" src="./assets/images/light-logo.svg" alt="Logo">
+          <img id="offcanvas-picture" class="offcanvas-picture" src="./assets/images/light-logo.svg" alt="Logo" loading="lazy">
         </a>
         <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
           <span class="btn-close"></span>
@@ -84,18 +90,10 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <div id="offcanvas-theme" class="d-lg-none">
             <button id="offcanvas-theme-toggle" class="theme-toggle nav-link">
               <i class="fa fa-sun-o light-icon" style="display: none;"></i>
@@ -103,469 +101,359 @@
               <span class="theme-text">Dark</span>
             </button>
           </div>
-          <div class="flex mt-3 space-x-6 sm: sm:mt-0">
-            <a href="https://www.facebook.com/mianusamasadiq" aria-label="facebook" target="_blank">
-              <i class="fab fa-facebook text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
 
-            <a href="https://www.instagram.com/chusamasadiq" aria-label="instagram" target="_blank">
-              <i class="fab fa-instagram text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://twitter.com/usamasadiqch" aria-label="twitter" target="_blank">
-              <i class="fab fa-twitter text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/chusamasadiq" aria-label="linkedin" target="_blank">
-              <i class="fab fa-linkedin text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://github.com/chusamasadiq" aria-label="github" target="_blank">
-              <i class="fab fa-github text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://www.youtube.com/@FlutterWithUsama" aria-label="youtube" target="_blank">
-              <i class="fab fa-youtube text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
+          <!-- Social Links -->
+          <div class="flex mt-3 space-x-6 sm:mt-0">
+            <a href="https://www.facebook.com/mianusamasadiq" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/chusamasadiq" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/usamasadiqch" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/chusamasadiq" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/chusamasadiq" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@FlutterWithUsama" target="_blank" aria-label="youtube"><i class="fab fa-youtube"></i></a>
           </div>
         </ul>
       </div>
     </div>
   </header>
-  <!-- End Header -->
 
-  <!-- Start Banner -->
+  <!-- Banner Section -->
   <section class="banner">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 info order-2 order-lg-first order-md-first order-sm-last">
+        <div class="col-lg-6 info order-2 order-lg-first">
           <h1 class="developer">Flutter Developer</h1>
           <p class="mt-2">
             Aspiring Data Scientist and Mobile App Developer with expertise in Flutter, AI integration, and cross-platform development. Passionate about building user-centric apps and leveraging data science for impactful solutions.
-            Excited to collaborate on innovative projects and shape the future with technology.
             <b>Let’s connect!</b>
           </p>
-          <div class="flex mt-3 space-x-6 sm: sm:mt-0">
-
-            <a href="https://www.facebook.com/mianusamasadiq" aria-label="facebook" target="_blank">
-              <i class="fab fa-facebook text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://www.instagram.com/chusamasadiq" aria-label="instagram" target="_blank">
-              <i class="fab fa-instagram text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://twitter.com/usamasadiqch" aria-label="twitter" target="_blank">
-              <i class="fab fa-twitter text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/chusamasadiq" aria-label="linkedin" target="_blank">
-              <i class="fab fa-linkedin text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://github.com/chusamasadiq" aria-label="github" target="_blank">
-              <i class="fab fa-github text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
-
-            <a href="https://www.youtube.com/@FlutterWithUsama" aria-label="youtube" target="_blank">
-              <i class="fab fa-youtube text-gray-500 hover:text-gray-900 dark:hover:text-white"></i>
-            </a>
+          <!-- Social Links -->
+          <div class="flex mt-3 space-x-6 sm:mt-0">
+            <a href="https://www.facebook.com/mianusamasadiq" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/chusamasadiq" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/usamasadiqch" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/chusamasadiq" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/chusamasadiq" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@FlutterWithUsama" target="_blank" aria-label="youtube"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12 order-1 order-lg-last order-md-last order-sm-first" data-aos="fade-up"
-          data-aos-duration="3000">
-          <img src="./assets/images/Usama.webp" alt="image" height="800px" width="600px"
-            class="img-fluid  profilePhoto" />
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End Banner -->
-
-  <!-- Start Services Section -->
-  <section class="services" id="services">
-    <div class="container text-center">
-      <div data-aos="zoom-in" data-aos-duration="1000">
-        <h1 class="pt-5">Services</h1>
-        <p class=" mt-2 mb-5">
-          We offer scalable web & mobile application development services.
-          <br>Providing the best user experiences with attractive aesthetics and design principles.
-        </p>
-      </div>
-
-      <div class="row" data-aos="zoom-in" data-aos-duration="3000">
-        <div class="col-lg-4 col-sm-12 col-md-6">
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/website.svg" alt="... img-responsive" />
-            </a>
-            <div class="card-body">
-              <p class="text-center">Web App Development</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-12 col-md-6">
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/mobile.svg" alt="... img-responsive" />
-            </a>
-            <div class="card-body">
-              <p class="text-center">Mobile Application Development</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-12 col-md-6">
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/ui-ux-designer.svg" alt="... img-responsive" />
-            </a>
-            <div class="card-body">
-              <p class="text-center">UI/UX Design</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-12 col-md-6">
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/data-science.png" alt="... img-responsive" />
-            </a>
-            <div class="card-body">
-              <p class="text-center">AI & Data Science</p>
-            </div>
-          </div>
+        <div class="col-lg-6 order-1 order-lg-last" data-aos="fade-up" data-aos-duration="3000">
+          <img src="./assets/images/Usama.webp" alt="Usama Sadiq" height="800" width="600" loading="lazy" class="img-fluid profilePhoto" />
         </div>
       </div>
     </div>
   </section>
-  <!-- End Services Section -->
 
-  <!-- Start Portfolio Section -->
-  <section id="portfolio">
-    <div class="container text-center">
-      <div data-aos="zoom-in" data-aos-duration="1000">
-        <h1 class="pt-5">Work Portfolio</h1>
-        <p class=" mt-2 mb-2">
-          We offer scalable web & mobile application development services.
-        </p>
-      </div>
 
-      <div class="mb-4">
-        <ul class="flex flex-wrap -mb-px text-sm justify-center items-center" id="myTab"
-          data-tabs-toggle="#myTabContent" role="tablist">
-          <li class="mr-2" role="presentation">
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
-              id="web-tab" data-tabs-target="#web" type="button" role="tab" aria-controls="web"
-              aria-selected="false">Web</button>
-          </li>
-          <li class="mr-2" role="presentation">
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
-              id="mobile-tab" data-tabs-target="#mobile" type="button" role="tab" aria-controls="mobile"
-              aria-selected="true">Mobile</button>
-          </li>
-          <li class="mr-2" role="presentation">
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-700"
-              id="uiuxdesign-tab" data-tabs-target="#uiuxdesign" type="button" role="tab" aria-controls="uiuxdesign"
-              aria-selected="false">UI/UX Design</button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Start Tab Section -->
-      <div id="myTabContent">
-        <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="web" role="tabpanel" aria-labelledby="web-tab">
-          <p class="text-sm text-gray-500 dark:text-gray-400"> Web Application Development</p>
-        </div>
-        <div class="container" data-aos="fade-down" data-aos-duration="3000">
-          <div class="row p-4 hidden" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="#" target="_blank">
-                <img src="./assets/images/FAS.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">FAS Connector</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/shorts/coKtFIDIFqw" target="_blank">
-                <img src="./assets/images/restaurant.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Restaurant App UI</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="#">
-                <img src="./assets/images/Calculator.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Calculator</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6978371881624117248/" target="_blank">
-                <img src="./assets/images/Login Screen.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Login Screen</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/watch?v=KOGY_pDX5Po&ab_channel=HowToProgramming" target="_blank">
-                <img src="./assets/images/erozgaar.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">e-Rozgaar Mobile App</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/watch?v=xFO42gm5VS0&ab_channel=HowToProgramming" target="_blank">
-                <img src="./assets/images/WestCoastCoupon.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">West Coast Coupons</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://youtube.com/shorts/oh2CykT3cEo" target="_blank">
-                <img src="./assets/images/Webview.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Webview Mobile App</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/shorts/ybifwFTpXYs" target="_blank">
-                <img src="./assets/images/LilSikh.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">LilSikh Mobile App</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="#">
-                <img src="./assets/images/togoparts.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Togoparts Mobile App</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/shorts/l4d3uu4wAew" target="_blank">
-                <img src="./assets/images/Map.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Google Map Customization</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/shorts/_fZ0QcEAQLw" target="_blank">
-                <img src="./assets/images/ChatBot.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">AI ChatBot</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://www.youtube.com/shorts/uWDJKmId2fs" target="_blank">
-                <img src="./assets/images/Moodie.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Moodie Movies App</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://apps.apple.com/pk/app/resumidor-de-textos/id6448945556" target="_blank">
-                <img src="./assets/images/Resumidor.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Resumidor (Android & IOS)</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://play.google.com/store/apps/details?id=com.storygenerator.stories.adventure"
-                target="_blank">
-                <img src="./assets/images/storypad.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">AI Story Generator (Android & IOS)</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="#" target="_blank">
-                <img src="./assets/images/textSummarizer.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Text Summarizer</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="#" target="_blank">
-                <img src="./assets/images/ParaphrasingTool.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Paraphrasing Tool</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://play.google.com/store/apps/details?id=com.homeservices.easykam" target="_blank">
-                <img src="./assets/images/easykam.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">EasyKam</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://play.google.com/store/apps/details?id=com.usamasadiq.geminibot" target="_blank">
-                <img src="./assets/images/umini.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">Umini AI ChatBot</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://play.google.com/store/apps/details?id=com.noiseremoval.noiseraser" target="_blank">
-                <img src="./assets/images/noiseRemover.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">AI Noise Remover</p>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-md-6 mb-4">
-              <a href="https://play.google.com/store/apps/details?id=com.aiphoto.bgremover" target="_blank">
-                <img src="./assets/images/bgRemover.webp" height="600px" width="300px" class="mobImage"
-                  alt="... img-responsive" />
-              </a>
-              <p class="pt-2">AI BG Remover</p>
-            </div>
-          </div>
-          <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="uiuxdesign" role="tabpanel"
-            aria-labelledby="uiuxdesign-tab">
-            <p class="text-sm text-gray-500 dark:text-gray-400">UI/UX Design</p>
-          </div>
-        </div>
-
-      </div>
-      <!-- End Tab Section -->
-  </section>
-  <!-- End Portfolio Section   -->
-
-  <!-- Footer -->
-  <footer class="text-center text-white footer">
-    <!-- Grid container -->
-    <div class="container">
-      <!-- Section: Links -->
-      <section class="mt-5" id="contact">
-        <!-- Grid row-->
-        <div class="row text-center d-flex justify-content-center pt-5">
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <p class="text-uppercase font-weight-bold">
-              <a href="index.html" class="text-white">About us</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <p class="text-uppercase font-weight-bold">
-              <a href="#services" class="text-white">Services</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <p class="text-uppercase font-weight-bold">
-              <a href="#porfolio" class="text-white">Portfolio</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <p class="text-uppercase font-weight-bold">
-              <a href="#contact" class="text-white">Contact</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row-->
-      </section>
-      <!-- Section: Links -->
-
-      <hr class="my-5" />
-
-      <!-- Section: Text -->
-      <section class="mb-5">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <p class="text-3xl font-bold">
-              Let's Stay Connected With Us!
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Social -->
-      <section class="text-center mb-5">
-        <a href="https://www.facebook.com/mianusamasadiq" aria-label="facebook" class="text-white me-4" target="_blank">
-          <i class="fab fa-facebook"> </i>
-        </a>
-        <a href="https://twitter.com/usamasadiqch" aria-label="twitter" class="text-white me-4" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="mailto:usamasadiq163@gmail.com" aria-label="gmail" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="https://www.instagram.com/chusamasadiq/" aria-label="instagram" class="text-white me-4"
-          target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=923346994830" aria-label="whatsapp" class="text-white me-4"
-          target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/chusamasadiq/" aria-label="linkedin" class="text-white me-4"
-          target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/chusamasadiq" aria-label="github" class="text-white me-4" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.youtube.com/@FlutterWithUsama/" aria-label="youtube" class="text-white me-4"
-          target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </section>
-      <!-- Section: Social -->
+<!-- Services Section -->
+<section class="services py-5" id="services">
+  <div class="container text-center">
+    <div data-aos="zoom-in" data-aos-duration="800">
+      <h1 class="pt-4">Services</h1>
+      <p class="mt-2 mb-5 text-muted">
+        Comprehensive web & mobile application development services with focus on<br>
+        scalability, user experience, and modern design principles.
+      </p>
     </div>
-    <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      Copyright © 2025. All Rights Reserved.
-      <a class="text-white" href="index.html">Usama Sadiq</a>
+    <div class="row g-4" data-aos="zoom-in" data-aos-duration="1000">
+      
+      <!-- Service Card -->
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card h-100 shadow-sm" role="region" aria-label="Web App Development">
+          <div class="card-body">
+            <img src="./assets/images/website.svg" alt="Web Development" class="img-fluid mb-3" loading="lazy" decoding="async">
+            <h3 class="h5">Web App Development</h3>
+            <p class="small text-muted">Responsive, performant web applications</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card h-100 shadow-sm" role="region" aria-label="Mobile App Development">
+          <div class="card-body">
+            <img src="./assets/images/mobile.svg" alt="Mobile Development" class="img-fluid mb-3" loading="lazy" decoding="async">
+            <h3 class="h5">Mobile App Development</h3>
+            <p class="small text-muted">Cross-platform Flutter applications</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card h-100 shadow-sm" role="region" aria-label="UI/UX Design">
+          <div class="card-body">
+            <img src="./assets/images/ui-ux-designer.svg" alt="UI/UX Design" class="img-fluid mb-3" loading="lazy" decoding="async">
+            <h3 class="h5">UI/UX Design</h3>
+            <p class="small text-muted">User-centered interface design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card h-100 shadow-sm" role="region" aria-label="AI and Data Science">
+          <div class="card-body">
+            <img src="./assets/images/data-science.png" alt="AI and Data Science" class="img-fluid mb-3" loading="lazy" decoding="async">
+            <h3 class="h5">AI & Data Science</h3>
+            <p class="small text-muted">AI integration and data solutions</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+  </div>
+</section>
 
-  <!-- Move Up Arrow -->
-  <a href="#topHeader" class="top">
-    <img src="./assets/images/moveUp.svg">
-  </a>
+<!-- Portfolio Section -->
+<section id="portfolio">
+  <div class="container text-center">
+    <div data-aos="zoom-in" data-aos-duration="1000">
+      <h1>Work Portfolio</h1>
+      <p class="mt-2 mb-4">
+        We offer scalable web & mobile application development services.
+      </p>
+    </div>
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
+        <div class="row p-4" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+          <!-- Portfolio Items -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="#" target="_blank">
+              <img src="./assets/images/FAS.webp" class="mobImage" alt="FAS Connector App">
+            </a>
+            <p class="pt-2">FAS Connector</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/shorts/coKtFIDIFqw" target="_blank">
+              <img src="./assets/images/restaurant.webp" class="mobImage" alt="Restaurant App UI">
+            </a>
+            <p class="pt-2">Restaurant App UI</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="#">
+              <img src="./assets/images/Calculator.webp" class="mobImage" alt="Calculator App">
+            </a>
+            <p class="pt-2">Calculator</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:6978371881624117248/" target="_blank">
+              <img src="./assets/images/Login Screen.webp" class="mobImage" alt="Login Screen App">
+            </a>
+            <p class="pt-2">Login Screen</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/watch?v=KOGY_pDX5Po" target="_blank">
+              <img src="./assets/images/erozgaar.webp" class="mobImage" alt="e-Rozgaar Mobile App">
+            </a>
+            <p class="pt-2">e-Rozgaar Mobile App</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/watch?v=xFO42gm5VS0" target="_blank">
+              <img src="./assets/images/WestCoastCoupon.webp" class="mobImage" alt="West Coast Coupons App">
+            </a>
+            <p class="pt-2">West Coast Coupons</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://youtube.com/shorts/oh2CykT3cEo" target="_blank">
+              <img src="./assets/images/Webview.webp" class="mobImage" alt="Webview Mobile App">
+            </a>
+            <p class="pt-2">Webview Mobile App</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/shorts/ybifwFTpXYs" target="_blank">
+              <img src="./assets/images/LilSikh.webp" class="mobImage" alt="LilSikh Mobile App">
+            </a>
+            <p class="pt-2">LilSikh Mobile App</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="#">
+              <img src="./assets/images/togoparts.webp" class="mobImage" alt="Togoparts Mobile App">
+            </a>
+            <p class="pt-2">Togoparts Mobile App</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/shorts/l4d3uu4wAew" target="_blank">
+              <img src="./assets/images/Map.webp" class="mobImage" alt="Google Map Customization App">
+            </a>
+            <p class="pt-2">Google Map Customization</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/shorts/_fZ0QcEAQLw" target="_blank">
+              <img src="./assets/images/ChatBot.webp" class="mobImage" alt="AI ChatBot App">
+            </a>
+            <p class="pt-2">AI ChatBot</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://www.youtube.com/shorts/uWDJKmId2fs" target="_blank">
+              <img src="./assets/images/Moodie.webp" class="mobImage" alt="Moodie Movies App">
+            </a>
+            <p class="pt-2">Moodie Movies App</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://apps.apple.com/pk/app/resumidor-de-textos/id6448945556" target="_blank">
+              <img src="./assets/images/Resumidor.webp" class="mobImage" alt="Resumidor App">
+            </a>
+            <p class="pt-2">Resumidor (iOS & Android)</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://play.google.com/store/apps/details?id=com.storygenerator.stories.adventure" target="_blank">
+              <img src="./assets/images/storypad.webp" class="mobImage" alt="AI Story Generator App">
+            </a>
+            <p class="pt-2">AI Story Generator</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="#">
+              <img src="./assets/images/textSummarizer.webp" class="mobImage" alt="Text Summarizer App">
+            </a>
+            <p class="pt-2">Text Summarizer</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="#">
+              <img src="./assets/images/ParaphrasingTool.webp" class="mobImage" alt="Paraphrasing Tool App">
+            </a>
+            <p class="pt-2">Paraphrasing Tool</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://play.google.com/store/apps/details?id=com.homeservices.easykam" target="_blank">
+              <img src="./assets/images/easykam.webp" class="mobImage" alt="EasyKam App">
+            </a>
+            <p class="pt-2">EasyKam</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://play.google.com/store/apps/details?id=com.usamasadiq.geminibot" target="_blank">
+              <img src="./assets/images/umini.webp" class="mobImage" alt="Umini AI ChatBot App">
+            </a>
+            <p class="pt-2">Umini AI ChatBot</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://play.google.com/store/apps/details?id=com.noiseremoval.noiseraser" target="_blank">
+              <img src="./assets/images/noiseRemover.webp" class="mobImage" alt="AI Noise Remover App">
+            </a>
+            <p class="pt-2">AI Noise Remover</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <a href="https://play.google.com/store/apps/details?id=com.aiphoto.bgremover" target="_blank">
+              <img src="./assets/images/bgRemover.webp" class="mobImage" alt="AI BG Remover App">
+            </a>
+            <p class="pt-2">AI BG Remover</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="text-center text-white footer">
+  <!-- Grid container -->
+  <div class="container">
+    <!-- Section: Links -->
+    <section id="contact" class="mt-5">
+      <div class="row text-center d-flex justify-content-center pt-5">
+        <!-- Grid column -->
+        <div class="col-md-2 mb-2">
+          <p class="text-uppercase font-weight-bold">
+            <a href="index.html" class="text-white">About us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-2">
+          <p class="text-uppercase font-weight-bold">
+            <a href="#services" class="text-white">Services</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-2">
+          <p class="text-uppercase font-weight-bold">
+            <a href="#portfolio" class="text-white">Portfolio</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-2">
+          <p class="text-uppercase font-weight-bold">
+            <a href="#contact" class="text-white">Contact</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Links -->
 
+    <hr class="my-5" />
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    <!-- Section: Text -->
+    <section class="mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <p class="text-3xl font-bold">
+            Let's Stay Connected With Us!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Text -->
 
-  <!-- AOS Animations Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Section: Social -->
+    <section class="text-center mb-5">
+      <!-- Social media links -->
+      <a href="https://www.facebook.com/mianusamasadiq" aria-label="facebook" class="text-white me-4" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/usamasadiqch" aria-label="twitter" class="text-white me-4" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="mailto:usamasadiq163@gmail.com" aria-label="gmail" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="https://www.instagram.com/chusamasadiq/" aria-label="instagram" class="text-white me-4" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=923346994830" aria-label="whatsapp" class="text-white me-4" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/chusamasadiq/" aria-label="linkedin" class="text-white me-4" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/chusamasadiq" aria-label="github" class="text-white me-4" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.youtube.com/@FlutterWithUsama/" aria-label="youtube" class="text-white me-4" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </section>
+    <!-- Section: Social -->
+  </div>
+  <!-- Grid container -->
 
-  <!-- Fontawesome Script -->
-  <script src="https://kit.fontawesome.com/9ae7780baa.js" crossorigin="anonymous"></script>
+  <!-- Copyright -->
+ <!-- Copyright -->
+<div class="copyright text-center p-3">
+  Copyright © 2025. All Rights Reserved.
+  <a href="index.html" class="text-white">Usama Sadiq</a>
+</div>
+</footer>
+<!-- Footer -->
 
-  <!-- Tailwind Script -->
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Move Up Arrow -->
+<a href="#topHeader" class="top">
+  <img src="./assets/images/moveUp.svg" alt="Scroll to top" />
+</a>
 
-  <script>
-    AOS.init();
-  </script>
-  <script src="./assets/js/script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<!-- AOS Animations Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Fontawesome Script -->
+<script src="https://kit.fontawesome.com/9ae7780baa.js" crossorigin="anonymous"></script>
+
+<!-- Tailwind Script -->
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script src="./assets/js/script.js"></script>
 </body>
-
 </html>
