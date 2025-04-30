@@ -181,7 +181,7 @@ body {
 .dark-theme .navbar-nav .nav-link.active,
 .dark-theme .navbar-nav .nav-link:hover {
   color: #fff;
-  transform: scale(1.1); /* Slightly scale up the link on hover */
+  transform: scale(1.1);
 }
 
 .dark-theme .navbar-toggler {
@@ -239,7 +239,7 @@ body {
   padding-left: 18px;
 }
 
-/* Add CSS for the typing effect */
+/* Typing Effect */
 .typing-container {
   display: inline-block;
   min-width: 250px;
@@ -252,26 +252,36 @@ body {
   display: inline-block;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/* Social Icon Colors */
+.social-icons a {
+  color: #000; /* Light theme default */
+  transition: color 0.3s ease;
 }
 
-@keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
+.dark-theme .social-icons a {
+  color: #fff; /* Dark theme default */
 }
 
-.typing {
-  display: inline-block;
-  width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #000;
-  animation: typing 2s steps(20) 1s forwards, blink-caret 0.75s step-end infinite;
+.social-icons a:hover[aria-label="facebook"] {
+  color: #1877F2 ;
+}
+
+.social-icons a:hover[aria-label="instagram"] {
+  color: #fa7e1e;
+}
+
+.social-icons a:hover[aria-label="twitter"] {
+  color: #1DA1F2;
+}
+
+.social-icons a:hover[aria-label="linkedin"] {
+  color: #0077B5;
+}
+
+.social-icons a:hover[aria-label="github"] {
+  color: #333;
+}
+
+.social-icons a:hover[aria-label="youtube"] {
+  color: #FF0000;
 }
