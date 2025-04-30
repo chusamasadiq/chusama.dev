@@ -83,7 +83,7 @@ img#offcanvas-picture {
 
 /* Mobile Image Hover Effect */
 .mobImage {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mobImage:hover {
@@ -131,13 +131,6 @@ img#offcanvas-picture {
   .card {
     height: 390px;
   }
-}
-
-spanBox {
-  position: fixed;
-  border-radius: 50%;
-  background-color: #fff;
-  animation: ani 10s linear infinite;
 }
 
 /* Footer Section */
@@ -242,7 +235,43 @@ body {
 /* Apply only to the 'Home' link in the mobile navbar */
 .offcanvas .navbar-nav .nav-item:first-child .nav-link.active,
 .offcanvas .navbar-nav .nav-item:first-child .nav-link:hover {
-
   transform: scale(1.1);
   padding-left: 18px;
+}
+
+/* Add CSS for the typing effect */
+.typing-container {
+  display: inline-block;
+  min-width: 250px;
+  white-space: nowrap;
+}
+
+.typing-effect {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing {
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #000;
+  animation: typing 2s steps(20) 1s forwards, blink-caret 0.75s step-end infinite;
 }

@@ -78,3 +78,25 @@ const toggleTheme = () => {
 // Attach event listeners for theme toggle buttons
 darkModeButton.addEventListener('click', toggleTheme);
 offcanvasDarkModeButton.addEventListener('click', toggleTheme);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const texts = ["Software Engineer","Flutter Developer", "Data Scientist"];
+    let index = 0;
+    const typingElement = document.getElementById("typing-effect");
+  
+    function typeText(text, i = 0) {
+      if (i < text.length) {
+        typingElement.textContent += text.charAt(i);
+        setTimeout(() => typeText(text, i + 1), 250);
+      } else {
+        setTimeout(() => {
+          typingElement.textContent = "";
+          index = (index + 1) % texts.length;
+          typeText(texts[index]);
+        }, 2000);
+      }
+    }
+  
+    typeText(texts[index]);
+  });
+  
